@@ -7,8 +7,8 @@ on:
       - develop
       - features/**
       - hotfix/**
-    # paths:
-    #   - '**/*.dart'
+    paths:
+      - '**.dart'
 
 jobs:
   build:
@@ -20,3 +20,4 @@ jobs:
       - run: dart pub get
       - run: dart format --output=none --set-exit-if-changed .
       - run: dart analyze
+      - run: flutter test
