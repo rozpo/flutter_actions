@@ -2,11 +2,11 @@ name: Dart
 
 on:
   pull_request:
-    types:
-      - opened
-    branches:
-      - features/**
-      - hotfix/**
+    # types:
+    #   - opened
+    # branches:
+    #   - features/**
+    #   - hotfix/**
     # paths:
     #   - '**/*.dart'
 
