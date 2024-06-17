@@ -7,8 +7,8 @@ on:
     branches:
       - features/**
       - hotfix/**
-    paths:
-      - '**/*.dart'
+    # paths:
+    #   - '**/*.dart'
 
 jobs:
   build:
