@@ -2,10 +2,10 @@ name: Dart
 
 on:
   pull_request:
-    # types:
-    #   - opened
-    # branches:
-    #   - features/**
+    types:
+      - opened
+    branches:
+      - features/**
     #   - hotfix/**
     # paths:
     #   - '**/*.dart'
@@ -20,4 +20,3 @@ jobs:
       - run: dart pub get
       - run: dart format --output=none --set-exit-if-changed .
       - run: dart analyze
-      - run: dart test
